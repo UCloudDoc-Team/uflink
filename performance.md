@@ -9,10 +9,10 @@
 |              |          |            |           |
 | ------------ | -------- | ---------- | --------- |
 | Message Size | Parallel | Throughput | Same Host |
-| 1024         | 1        | 400mb/s    | True      |
-| 1024         | 1        | 360mb/s    | False     |
-| 1024 \* 1024 | 1        | 345 mb/s   | False     |
-| 1024 \* 1024 | 1        | 278 mb/s   | False     |
+| 1024         | 1        | 400 MB/s   | True      |
+| 1024         | 1        | 360 MB/s   | False     |
+| 1024 \* 1024 | 1        | 345 MB/s   | False     |
+| 1024 \* 1024 | 1        | 278 MB/s   | False     |
 
 ### 延迟
 
@@ -30,10 +30,10 @@
 |              |             |                |              |                   |                    |            |
 | ------------ | ----------- | -------------- | ------------ | ----------------- | ------------------ | ---------- |
 | Message Size | Broker Size | Partition Size | Replica Size | Consumer Parallel | Checkpoint Enabled | Throughput |
-| 1024         | 3           | 3              | 3            | 1                 | False              | 230mb/s    |
-| 1024         | 3           | 3              | 3            | 3                 | False              | 370mb/s    |
-| 1024         | 3           | 3              | 3            | 1                 | True               | 230mb/s    |
-| 1024         | 3           | 3              | 3            | 3                 | True               | 370mb/s    |
+| 1024         | 3           | 3              | 3            | 1                 | False              | 230 MB/s   |
+| 1024         | 3           | 3              | 3            | 3                 | False              | 370 MB/s   |
+| 1024         | 3           | 3              | 3            | 1                 | True               | 230 MB/s   |
+| 1024         | 3           | 3              | 3            | 3                 | True               | 370 MB/s   |
 
 ### Kafka Consumer
 
@@ -42,10 +42,10 @@
 |              |             |                |              |     |          |            |
 | ------------ | ----------- | -------------- | ------------ | --- | -------- | ---------- |
 | Message Size | Broker Size | Partition Size | Replica Size | Ack | Parallel | Throughput |
-| 1024         | 3           | 3              | 3            | \-1 | 1        | 75mb/s     |
-| 1024         | 3           | 3              | 3            | 1   | 1        | 80mb/s     |
-| 100          | 3           | 3              | 3            | \-1 | 1        | 55mb/s     |
-| 100          | 3           | 3              | 3            | 1   | 1        | 57mb/s     |
+| 1024         | 3           | 3              | 3            | \-1 | 1        | 75 MB/s    |
+| 1024         | 3           | 3              | 3            | 1   | 1        | 80 MB/s    |
+| 100          | 3           | 3              | 3            | \-1 | 1        | 55 MB/s    |
+| 100          | 3           | 3              | 3            | 1   | 1        | 57 MB/s    |
 
 ### HDFS/Rocksdb checkpoint吞吐量
 
@@ -54,10 +54,10 @@
 |                        |                     |                       |         |         |
 | ---------------------- | ------------------- | --------------------- | ------- | ------- |
 | Stated Source Parallel | Checkpoint Interval | Checkpoint state Size | hdfs    | rocksdb |
-| 1                      | 10000 ms            | 200mb                 | 133mb/s | 100mb/s |
-| 3                      | 10000 ms            | 200mb (each)          | 200mb/s | 128mb/s |
-| 1                      | 10000 ms            | 100mb                 | 133mb/s | 100mb/s |
-| 3                      | 10000 ms            | 100mb (each)          | 150mb/s | 150mb/s |
+| 1                      | 10000 ms            | 200 MB                | 133 MB/s| 100 MB/s|
+| 3                      | 10000 ms            | 200 MB (each)         | 200 MB/s| 128 MB/s|
+| 1                      | 10000 ms            | 100 MB                | 133 MB/s| 100 MB/s|
+| 3                      | 10000 ms            | 100 MB (each)         | 150 MB/s| 150 MB/s|
 
 ### Flink hdfs checkpoint 延迟
 
