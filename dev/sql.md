@@ -306,7 +306,7 @@ CREATE TABLE ut_postgre_side(
 | 参数名          | 必填 | 默认值 | 含义                                                         | 举例                                                         |
 | --------------- | ---- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | type            | 是   | 无     | 数据源类型                                                   | type = 'postgre'                                             |
-| url             | 是   | 无     | PostgreSQL Database 地址                                     | url = 'jdbc:postgresql://10.9.11.122:5432/db_flink_test?useUnicode=true&characterEncoding=utf-8' |
+| url             | 是   | 无     | PostgreSQL Database 地址                                     | url = jdbc:postgresql:*/*/10.9.11.122:5432*/db\_flink\_test?useUnicode=true&characterEncoding=utf-8 |
 | username        | 是   | 无     | 用户名                                                       | userName ='root'                                             |
 | password        | 是   | 无     | 密码                                                         | password ='123456'                                           |
 | tablename       | 是   | 无     | PostgreSQL 中的表名                                          | tableName ='ut_postgre_result'                               |
