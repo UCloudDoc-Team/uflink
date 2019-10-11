@@ -262,7 +262,7 @@ CREATE TABLE ut_mysql_side(
 | username        | 是   | 无     | 用户名                                                       | userName ='root'                                             |
 | password        | 是   | 无     | 密码                                                         | password ='123456'                                           |
 | tablename       | 是   | 无     | MySQL 中的表名                                               | tableName ='ut\_postgre\_result'                               |
-| cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'<br />cache = 'NONE'                            |
+| cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'  cache = 'NONE'                            |
 | cacheSize       | 否   | 无     | 缓存行数，cache属性为LRU时生效                               | cacheSize = '100'                                            |
 | cacheTTLMs      | 否   | 无     | 缓存过期时间，cache属性为LRU时生效，单位：毫秒               | cacheTTLMs ='60000'                                          |
 | partitionedJoin | 否   | 无     | 是否在 JOIN 数据之前，将维表数据按照 PRIMARY KEY指定的列进行reduceByKey操作，从而减少维表缓存数据量。 | partitionedJoin = 'true'                                     |
@@ -310,7 +310,7 @@ CREATE TABLE ut_postgre_side(
 | username        | 是   | 无     | 用户名                                                       | userName ='root'                                             |
 | password        | 是   | 无     | 密码                                                         | password ='123456'                                           |
 | tablename       | 是   | 无     | PostgreSQL 中的表名                                          | tableName ='ut\_postgre\_result'                               |
-| cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'<br />cache = 'NONE'                            |
+| cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'  cache = 'NONE'                            |
 | cacheSize       | 否   | 无     | 缓存行数，cache属性为LRU时生效                               | cacheSize = '100'                                            |
 | cacheTTLMs      | 否   | 无     | 缓存过期时间，cache属性为LRU时生效，单位：毫秒               | cacheTTLMs ='60000'                                          |
 | partitionedJoin | 否   | 无     | 是否在 JOIN 数据之前，将维表数据按照 PRIMARY KEY指定的列进行reduceByKey操作，从而减少维表缓存数据量。 | partitionedJoin = 'true'                                     |
