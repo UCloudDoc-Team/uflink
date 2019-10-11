@@ -64,7 +64,7 @@ CREATE TABLE ut_kafka_source(
  );
 ```
 
-上述代码用于在 UFlink 中创建一张名为 ut_kafka_source 的表，并声明表中字段信息（属性名及属性类型）。
+上述代码用于在 UFlink 中创建一张名为 ut\_kafka\_source 的表，并声明表中字段信息（属性名及属性类型）。
 
 随后，必须在 WITH 代码块中指定数据来源，以及数据源所使用的框架的必要参数。
 
@@ -115,7 +115,7 @@ CREATE TABLE ut_kafka_result(
  );
 ```
 
-上述代码用于在 UFlink 中创建一张名为 ut_kafka_result 的表，并声明表中字段信息（属性名及属性类型）。
+上述代码用于在 UFlink 中创建一张名为 ut\_kafka\_result 的表，并声明表中字段信息（属性名及属性类型）。
 
 随后，必须在 WITH 代码块中指定数据输出时的相关参数，以及数据源所使用的框架的必要参数。
 
@@ -160,10 +160,10 @@ CREATE TABLE ut_mysql_result(
 | 参数名      | 必填 | 默认值 | 含义                | 举例                                                         |
 | ----------- | ---- | ------ | ------------------- | ------------------------------------------------------------ |
 | type        | 是   | 无     | 数据源类型          | type = 'mysql'                                               |
-| url         | 是   | 无     | MySQL Database 地址 | url = 'jdbc:mysql:*/*/linux01:3306/db\_flink\_ test?useUnicode=true&characterEncoding=utf-8' |
+| url         | 是   | 无     | MySQL Database 地址 | url = 'jdbc:mysql:*/*/linux01:3306/db\_flink\_test?useUnicode=true&characterEncoding=utf-8' |
 | username    | 是   | 无     | 用户名              | userName ='root'                                             |
 | password    | 是   | 无     | 密码                | password ='123456'                                           |
-| tablename   | 是   | 无     | MySQL 中的表名      | tableName ='ut_mysql_result'                                 |
+| tablename   | 是   | 无     | MySQL 中的表名      | tableName ='ut\_mysql\_result'                                 |
 | parallelism | 否   | 1      | 读取数据并行度      | parallelism = '1'                                            |
 
 #### 3. PostgreSQL 结果表
@@ -197,10 +197,10 @@ CREATE TABLE ut_postgre_result(
 | 参数名      | 必填 | 默认值 | 含义                     | 举例                                                         |
 | ----------- | ---- | ------ | ------------------------ | ------------------------------------------------------------ |
 | type        | 是   | 无     | 数据源类型               | type = 'postgre'                                             |
-| url         | 是   | 无     | PostgreSQL Database 地址 | url = 'jdbc:postgresql:*/*/10.9.11.122:5432/db\_ flink\_ test?useUnicode=true&characterEncoding=utf-8' |
+| url         | 是   | 无     | PostgreSQL Database 地址 | url = 'jdbc:postgresql:*/*/10.9.11.122:5432/db\_flink\_test?useUnicode=true&characterEncoding=utf-8' |
 | username    | 是   | 无     | 用户名                   | userName ='root'                                             |
 | password    | 是   | 无     | 密码                     | password ='123456'                                           |
-| tablename   | 是   | 无     | PostgreSQL 中的表名      | tableName ='ut_postgre_result'                               |
+| tablename   | 是   | 无     | PostgreSQL 中的表名      | tableName ='ut\_postgre\_result'                               |
 | parallelism | 否   | 1      | 读取数据并行度           | parallelism = '1'                                            |
 
 ### 2.3  创建维表
@@ -247,7 +247,7 @@ CREATE TABLE ut_mysql_side(
  );
 ```
 
-上述代码用于在 UFlink 中创建一张名为 ut_mysql_side 的表，并声明表中字段信息（属性名及属性类型），并可以指定主键对应的列，并且，涉及到 JOIN 操作的列，必须通过PRIMARY KEY 关键字进行声明，其中可以指定多个列（逗号分隔）。
+上述代码用于在 UFlink 中创建一张名为 ut\_mysql\_side 的表，并声明表中字段信息（属性名及属性类型），并可以指定主键对应的列，并且，涉及到 JOIN 操作的列，必须通过PRIMARY KEY 关键字进行声明，其中可以指定多个列（逗号分隔）。
 
 随后，必须在 WITH 代码块中指定数据输出时的相关参数，以及数据源所使用的框架的必要参数。
 
@@ -258,10 +258,10 @@ CREATE TABLE ut_mysql_side(
 | 参数名          | 必填 | 默认值 | 含义                                                         | 举例                                                         |
 | --------------- | ---- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | type            | 是   | 无     | 数据源类型                                                   | type = 'postgre'                                             |
-| url             | 是   | 无     | MySQL Database 地址                                          | url ='jdbc:mysql:*/*/linux01:3306*/db\_flink\_test?useUnicode=true&characterEncoding=utf-8' |
+| url             | 是   | 无     | MySQL Database 地址                                          | url = 'jdbc:mysql:*/*/linux01:3306/db\_flink\_test?useUnicode=true&characterEncoding=utf-8' |
 | username        | 是   | 无     | 用户名                                                       | userName ='root'                                             |
 | password        | 是   | 无     | 密码                                                         | password ='123456'                                           |
-| tablename       | 是   | 无     | MySQL 中的表名                                               | tableName ='ut_postgre_result'                               |
+| tablename       | 是   | 无     | MySQL 中的表名                                               | tableName ='ut\_postgre\_result'                               |
 | cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'<br />cache = 'NONE'                            |
 | cacheSize       | 否   | 无     | 缓存行数，cache属性为LRU时生效                               | cacheSize = '100'                                            |
 | cacheTTLMs      | 否   | 无     | 缓存过期时间，cache属性为LRU时生效，单位：毫秒               | cacheTTLMs ='60000'                                          |
@@ -295,7 +295,7 @@ CREATE TABLE ut_postgre_side(
  );
 ```
 
-上述代码用于在 UFlink 中创建一张名为 ut_mysql_side 的表，并声明表中字段信息（属性名及属性类型），并可以指定主键对应的列，并且，涉及到 JOIN 操作的列，必须通过PRIMARY KEY 关键字进行声明，其中可以指定多个列（逗号分隔）。
+上述代码用于在 UFlink 中创建一张名为 ut\_mysql\_side 的表，并声明表中字段信息（属性名及属性类型），并可以指定主键对应的列，并且，涉及到 JOIN 操作的列，必须通过PRIMARY KEY 关键字进行声明，其中可以指定多个列（逗号分隔）。
 
 随后，必须在 WITH 代码块中指定数据输出时的相关参数，以及数据源所使用的框架的必要参数。
 
@@ -306,10 +306,10 @@ CREATE TABLE ut_postgre_side(
 | 参数名          | 必填 | 默认值 | 含义                                                         | 举例                                                         |
 | --------------- | ---- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | type            | 是   | 无     | 数据源类型                                                   | type = 'postgre'                                             |
-| url             | 是   | 无     | PostgreSQL Database 地址                                     | url = jdbc:postgresql:*/*/10.9.11.122:5432/db\_flink\_test?useUnicode=true&characterEncoding=utf-8 |
+| url             | 是   | 无     | PostgreSQL Database 地址                                     | url = 'jdbc:postgresql:*/*/10.9.11.122:5432/db\_flink\_test?useUnicode=true&characterEncoding=utf-8' |
 | username        | 是   | 无     | 用户名                                                       | userName ='root'                                             |
 | password        | 是   | 无     | 密码                                                         | password ='123456'                                           |
-| tablename       | 是   | 无     | PostgreSQL 中的表名                                          | tableName ='ut_postgre_result'                               |
+| tablename       | 是   | 无     | PostgreSQL 中的表名                                          | tableName ='ut\_postgre\_result'                               |
 | cache           | 否   | NONE   | 维表数据缓存方式                                             | cache = 'LRU'<br />cache = 'NONE'                            |
 | cacheSize       | 否   | 无     | 缓存行数，cache属性为LRU时生效                               | cacheSize = '100'                                            |
 | cacheTTLMs      | 否   | 无     | 缓存过期时间，cache属性为LRU时生效，单位：毫秒               | cacheTTLMs ='60000'                                          |
