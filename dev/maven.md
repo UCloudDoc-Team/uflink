@@ -26,7 +26,7 @@
 
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-scala_2.11</artifactId>
+      <artifactId>flink-java</artifactId>
       <version>1.6.4</version>
       <scope>provided</scope>
     </dependency>
@@ -41,7 +41,7 @@
 
     <dependency>
       <groupId>org.apache.flink</groupId>
-      <artifactId>flink-java</artifactId>
+      <artifactId>flink-scala_2.11</artifactId>
       <version>1.6.4</version>
       <scope>provided</scope>
     </dependency>
