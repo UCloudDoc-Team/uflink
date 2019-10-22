@@ -762,7 +762,6 @@ CREATE TABLE tb_class_grade(
 
 
 CREATE TABLE tb_class_grade_result(
-    grade_data VARCHAR,
     class VARCHAR,
     student VARCHAR,
     grade VARCHAR
