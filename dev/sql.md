@@ -842,4 +842,5 @@ INSERT INTO
 ```
 
 其中，TUMBLE 为生成 滚动窗口 的函数，ROWTIME 为当前表的事件时间。
+提示：上述操作需要在提交 SQL 任务时添加指定参数：time.characteristic: EventTime
 
