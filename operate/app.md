@@ -4,7 +4,7 @@
 
 ### 1\. 上传代码
 
-关于资源管理请参考\[UFile操作文档\](<https://docs.ucloud.cn/storage_cdn/ufile/quick>)
+关于资源管理请参考\[UFile操作文档\](<https://docs.ucloud.cn/ufile/quick>)
 
 ### 2\. 提交任务
 
