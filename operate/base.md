@@ -20,19 +20,19 @@
 
 ![uflink\_instance\_resize.png](/images/operate/uflink_instance_resize.png)
 
-### 5\. 查看ResourceManager
+### 4\. 查看ResourceManager
 
 点击详情页的ResourceManager按钮查看Yarn ResourceManager UI:
 
 ![uflink\_instance\_rm.png](/images/operate/uflink_instance_rm.png)
 
-### 6\. 查看Flink任务历史
+### 5\. 查看Flink任务历史
 
 点击详情页的Flink History按钮查看Flink历史任务:
 
 ![uflink\_instance\_history.png](/images/operate/uflink_instance_history.png)
 
-### 7\. 节点密码重置
+### 6\. 节点密码重置
 
 点击集群列表页的更新密码按钮，并在弹出窗口中更新管理员用户名密码：
 
