@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__uflink"> Flink实时计算 UFlink</div>
 
 * [概览](/uflink/README)
 * 产品简介
