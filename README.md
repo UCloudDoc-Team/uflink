@@ -2,7 +2,7 @@
 
 
 * 产品简介
-    * [什么是实时计算](/uflink/introduction/concepts)
+    * [什么是实时计算.](/uflink/introduction/concepts)
     * [产品优势](/uflink/introduction/advantages)
     * [版本支持](/uflink/introduction/editions)
 * [快速上手](/uflink/quick)
