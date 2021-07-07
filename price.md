@@ -2,7 +2,7 @@
 
 # 产品价格
 
-本文档中展示的价格以北京二可用区E为例，其他可用区的价格可以登录[UFlink控制台](https://console.ucloud.cn/uflink/create)查看。
+本文档中展示的价格以华北（北京）可用区E为例，其他可用区的价格可以登录[UFlink控制台](https://console.ucloud.cn/uflink/create)查看。
 
 ## 1\. 计费方式
 
